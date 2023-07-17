@@ -1,0 +1,9 @@
+.footer {
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    color: white;
+    text-align: center;
+  }
+  .footer small {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+  }
