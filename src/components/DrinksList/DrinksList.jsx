@@ -10,7 +10,7 @@ export const DrinksList = () => {
     if (drinks.length === 0) {
         return ( 
         <Row className='p-5 m-5'>
-            <h1 className='text-center'>No hay ersultado</h1>
+            <h1 className='text-center'>No hay resultados</h1>
         </Row>
         )
     }
