@@ -22,7 +22,9 @@ export const DrinkCard = ({drink}) => {
             alt={`Imagen de ${drink.strDrink}`}
             />
             <Card.Body>
-                <Card.Title>{drink.strDrink}</Card.Title>
+                <Card.Title style={{height: "45px", textAlign:"center"}}> 
+                    {drink.strDrink}
+                </Card.Title>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Card.Subtitle>{`Precio: $${drink.price}`}</Card.Subtitle>
                 </div>

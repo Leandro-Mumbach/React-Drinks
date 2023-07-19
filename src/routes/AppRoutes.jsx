@@ -1,15 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Home } from "../pages/Home/Home"
-import NotFound from "../pages/NotFound/NotFound"
+import { Routes, Route } from "react-router-dom";
+import { Home } from "../pages/Home/Home";
+import NotFound from "../pages/NotFound/NotFound";
+import Login from "../pages/User/Login/Login";
+import Register from "../pages/User/Register/Register";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 
 export const AppRoutes = () => {
-  return (
-    <Router>
+  return ( 
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="*" element={<NotFound/>}/>
-      </Routes>
-    </Router>
+        <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+
+            <Route path="/" element={<ProtectedRoute/> }>
+              <Route path="/" element={<Home/>}/>
+            </Route>
+
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
   )
 }
