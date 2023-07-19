@@ -10,7 +10,7 @@ export const Card = ({ drink }) => {
   return (
     <article className={styles.card}>
       <img src={drink.strDrinkThumb} alt={drink.strDrink} />
-      <span> {drink.strDrink} </span>
+      <span className={styles.nameProductModal}> {drink.strDrink} </span>
       <span> {drink.price} </span>
       <div className={styles.counter}>
         <button onClick={() => removeOneFromCart(drink.idDrink)}> - </button>
