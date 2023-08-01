@@ -1,4 +1,0 @@
-name: <React-drink-L.M>
-routes:
-  - src: /
-    dest: /index.html
