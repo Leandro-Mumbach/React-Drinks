@@ -18,7 +18,8 @@ export const Header = () => {
             <> 
               <div className={styles.User}>
                 <FontAwesomeIcon icon={faUser} style={{paddingRight: '15px',}}/>
-                <p>{currentUser.name}</p>
+                <p>{currentUser.name.toUpperCase()
+                    }</p>
               </div>
               <FontAwesomeIcon icon={faCartShopping} className={styles.icon} onClick={toogleModal}/>
               <Button onClick={logout} className={styles.buttonLogout} variant="text" size="small">
